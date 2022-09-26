@@ -54,11 +54,11 @@ public class Counter {
     }
     
     public void count() {
-        if(value + 1 > limit) {
-            setValue(0);
+        if(value < limit) {
+            setValue(value + 1);
         }
         else {
-            setValue(value + 1); 
+            setValue(0);
         }
     }
     
